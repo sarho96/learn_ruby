@@ -1,14 +1,7 @@
 require './test_helper'
-# TIP: Always, ALWAYS read through all of the tests before you even start writing any code.
 
-# Again, a file with a specific name needs to be created, in this case "temperature.rb".
-# $ touch temperature.rb
 require 'temperature'
 
-# Now maybe we can talk more about the lines we ignored last problem.
-# The class definition lets us describe that this is a test,
-# not a regular Ruby program file
-# The name should describe what is being tested.
 class TestTemperature < MiniTest::Test
   def test_ftoc_converts_freezing_temperature
     assert_equal 0, ftoc(32)
@@ -22,7 +15,7 @@ class TestTemperature < MiniTest::Test
     assert_equal 37, ftoc(98.6)
   end
 
-  def test_ftoc_convers_arbitrary_temperature
+  def test_ftoc_converts_arbitrary_temperature
     assert_equal 20, ftoc(68)
   end
 
